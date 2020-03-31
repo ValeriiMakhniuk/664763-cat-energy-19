@@ -1,6 +1,7 @@
 .btn {
   padding: 10px 0;
   background-color: @btn-main--bg;
+  border: none;
   color: @btn--text-color;
   line-height: @line-height--s;
   font-size: @font-size--xs;
@@ -14,5 +15,20 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn--bg-gray {
+  background-color: @btn-secondary-bg;
+  font-size: @font-size--s;
+  line-height: @line-height--m;
+  color: @text-color;
+
+  &:hover {
+    background-color: @btn-secondary--hover-bg;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 }
