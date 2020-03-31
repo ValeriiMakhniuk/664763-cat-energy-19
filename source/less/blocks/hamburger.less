@@ -1,0 +1,31 @@
+.hamburger__btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1;
+
+  & > span,
+  & > span::before,
+  & > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: @mine-shaft;
+  }
+
+  & > span::before {
+    content: "";
+    top: 8px;
+  }
+
+  & > span::after {
+    content: "";
+    top: -8px;
+  }
+}
