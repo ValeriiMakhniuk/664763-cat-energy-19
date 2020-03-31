@@ -62,5 +62,16 @@
       margin-left: 14px;
       background-image: url("../../img/icon-right-arrow-long.svg");
     }
+
+    &:hover {
+      &::after {
+        width: 32px;
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: @opacity--l;
+    }
   }
 }
