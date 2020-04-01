@@ -1,0 +1,111 @@
+.before-after {
+  background-color: @bg--gray;
+
+  &__inner {
+    padding: 25px 20px 40px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: @font-size--l;
+    line-height: @line-height--xxl;
+    font-weight: 400;
+    color: @title-color;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 25px;
+    line-height: @line-height--s;
+  }
+
+  &__summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__result-block {
+    position: relative;
+    flex: 0 0 124px;
+    margin-top: 25px;
+    padding: 17px 0;
+    border: solid @before-after--border-color 1px;
+    border-radius: 3px;
+    margin-right: 30px;
+    text-align: center;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__result {
+    font-size: @font-size--m;
+    line-height: @line-height--l;
+    color: @title-color;
+  }
+
+  &__result-label {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    background-color: @bg--gray;
+    font-size: @font-size--xxs;
+    line-height: @line-height--xxs;
+  }
+
+  &__summary-text {
+    margin: 40px auto 0;
+    color: @title-color;
+    line-height: @line-height--m;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  &__scale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__scale-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: @font-size--s;
+    line-height: @line-height--m;
+    color: @title-color;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__scale-control {
+    position: relative;
+    margin: 0 18px;
+    width: 84px;
+    height: 14px;
+    border: solid @before-after--border-color 1px;
+    border-radius: 6px;
+    background-color: @white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 6px;
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: @apple;
+    }
+  }
+}
