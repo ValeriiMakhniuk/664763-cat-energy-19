@@ -1,0 +1,59 @@
+.extra {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: @apple;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-size: @font-size--m;
+    line-height: @line-height--l;
+    color: @title-color;
+    font-weight: 400;
+    border-bottom: solid @border-color 1px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__promo {
+    min-height: 289px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: @white;
+  }
+
+  &__promo-icon {
+    margin-bottom: 65px;
+  }
+
+  &__promo-text {
+    margin: 0 61px;
+    text-align: center;
+    font-size: @font-size--s;
+    line-height: @line-height--m;
+  }
+}
