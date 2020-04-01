@@ -1,5 +1,9 @@
 .product {
-  border-bottom: solid @border-color 1px;
+  border: solid @border-color 1px;
+  border-top: none;
+  &:first-of-type {
+    border-top: solid @border-color 1px;
+  }
 
   &__inner {
     padding: 0 20px 25px;
@@ -54,5 +58,6 @@
 
   &__btn {
     width: 100%;
+    cursor: pointer;
   }
 }
